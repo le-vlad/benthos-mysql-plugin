@@ -1,0 +1,14 @@
+input:
+  mysql_stream:
+    addr: {host:port}
+    user: user
+    password: password
+    flavor: mysql
+    database: demo
+    enable_ssl: true
+    stream_snapshot: false
+    tables:
+      - table_name
+
+output:
+  stdout: { }
